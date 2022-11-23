@@ -8,7 +8,7 @@
  * Return: bytes printed
  */
 
-int print_ex(va_list ap, params_t *params)
+int print_hex(va_list ap, params_t *params)
 {
 	unsigned long l;
 	int c = 0;
@@ -72,7 +72,7 @@ int print_HEX(va_list ap, params_t *params)
 int print_binary(va_list ap, params_t *params)
 {
 	unsigned int n = va_arg(ap, unsigned int);
-	char *str = convert(n, 2, CONVERT_UNSIGNED , params);
+	char *str = convert(n, 2, CONVERT_UNSIGNED, params);
 	int c = 0;
 
 	if (parasm->hashtag_flag && n)
@@ -105,5 +105,5 @@ int print_octal(va_list ap, params_t *params)
 	if (params->hashtag_flag && l)
 		*--str = '0';
 	params->unsign = 1;
-	return (c +=print_number(str, params));
+	return (c += print_number(str, params));
 }
