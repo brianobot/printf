@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _puts - prints a string with a newline
+ * _puts - prints a string with newline
  * @str: the string to print
+ *
  * Return: string a
  */
 int _puts(char *str)
