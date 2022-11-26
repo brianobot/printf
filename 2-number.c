@@ -49,7 +49,7 @@ int print_rev(va_list ap, params_t *params)
 /**
  * print_rot13 - print stringin rot13
  * @ap: string
- * @paramsL the paramter strcut
+ * @params: the paramter strcut
  * Return: number bytes printed
  */
 

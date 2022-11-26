@@ -24,7 +24,7 @@ int print_char(va_list ap, params_t *params)
 
 /**
  * print_int - prints integer
- * @apL argumenter pointer
+ * @ap: argumenter pointer
  * @params: paramter strcut
  *
  * Return: numbers of int printed
@@ -45,7 +45,7 @@ int print_int(va_list ap, params_t *params)
 /**
  * print_string - prints string
  * @ap: arguemtn pointer
- * #params: the paramters struct
+ * @params: the paramters struct
  *
  * Return: number of chars printed
  */
