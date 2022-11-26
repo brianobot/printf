@@ -29,7 +29,7 @@ int print_char(va_list ap, params_t *params)
  *
  * Return: numbers of int printed
  */
-int print_int(va_list ap, params_t params)
+int print_int(va_list ap, params_t *params)
 {
 	long l;
 
@@ -72,7 +72,7 @@ int print_string(va_list ap, params_t *params)
 	}
 	while (j++ < params->width)
 		sum += _putchar(pad_char);
-	if (!params->minux_flag)
+	if (!params->minus_flag)
 	{
 		if (params->precision != UINT_MAX)
 			for (i = 0; i < pad; i++)
@@ -90,7 +90,7 @@ int print_string(va_list ap, params_t *params)
  *
  * Return: number of percent printed
  */
-int print_percent(va_lis ap, params_t *params)
+int print_percent(va_list ap, params_t *params)
 {
 	(void)ap;
 	(void)params;

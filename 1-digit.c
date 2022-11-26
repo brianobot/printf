@@ -2,7 +2,7 @@
 
 /**
  * init_params - clears struct fields and reset buf
- * @param: the parameter struct
+ * @params: the parameter struct
  * @ap: the argument pointer
  * Return: nothing
  */

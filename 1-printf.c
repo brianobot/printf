@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _printf = prints and input to the std output
+ * _printf - prints and input to the std output
  * @format: the format string
  * Return: number of bytes printed
  */
@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (p = (char *)format; *p; p++)
 	{
-		int_params(&params, ap);
+		init_params(&params, ap);
 		if (*p != '%')
 		{
 			sum += _putchar(*p);
