@@ -6,5 +6,5 @@ version of the c printf standard library function
 
 ## Contributors / Team Members
 - Brian Obot <brianobot9@gmail.com>
-- Chukwunekeike Ife Philip
+- Chukwunekeike Ike Philip <chukwunekenwosu@gmail.com>
 
